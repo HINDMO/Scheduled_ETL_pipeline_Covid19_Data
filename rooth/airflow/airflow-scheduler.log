@@ -1,0 +1,409 @@
+2023-09-23 17:12:35,611 INFO - Starting the scheduler
+2023-09-23 17:12:35,613 INFO - Processing each file at most -1 times
+2023-09-23 17:12:35,638 INFO - Launched DagFileProcessorManager with pid: 2118
+2023-09-23 17:12:35,640 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 17:12:35,656 INFO - Configured default timezone Timezone('UTC')
+2023-09-23 17:13:39,654 ERROR - Job heartbeat got an exception
+Traceback (most recent call last):
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1094, in _commit_impl
+    self.engine.dialect.do_commit(self.connection)
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 686, in do_commit
+    dbapi_connection.commit()
+sqlite3.OperationalError: disk I/O error
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rooth/.local/lib/python3.10/site-packages/airflow/jobs/job.py", line 211, in heartbeat
+    session.commit()
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1454, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 839, in commit
+    trans.commit()
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2469, in commit
+    self._do_commit()
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2659, in _do_commit
+    self._connection_commit_impl()
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2630, in _connection_commit_impl
+    self.connection._commit_impl()
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1096, in _commit_impl
+    self._handle_dbapi_exception(e, None, None, None, None)
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2134, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1094, in _commit_impl
+    self.engine.dialect.do_commit(self.connection)
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 686, in do_commit
+    dbapi_connection.commit()
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) disk I/O error
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2023-09-23 17:17:36,021 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 17:22:36,161 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 17:27:36,585 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 17:32:36,976 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 17:37:37,292 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 17:42:37,625 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 17:47:37,962 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 17:52:38,184 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 17:57:38,517 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 18:02:38,597 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 18:07:38,862 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 18:12:38,939 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 18:17:39,271 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 18:22:39,584 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 18:27:40,081 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 18:32:40,562 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 18:37:40,845 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 18:42:41,163 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 18:47:41,459 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 18:52:41,651 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 18:57:41,914 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 19:02:42,222 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 19:07:42,518 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 19:12:42,833 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 19:17:43,166 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 19:22:43,544 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 19:27:43,916 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 19:32:44,568 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 19:37:44,850 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 19:42:44,868 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 19:47:45,169 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 19:52:45,575 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 19:57:45,659 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 20:02:45,956 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 20:07:46,277 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 20:12:46,604 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 20:17:46,926 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 20:22:47,249 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 22:15:44,911 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 22:15:44,926 INFO - Marked 1 SchedulerJob instances as failed
+2023-09-23 22:20:45,167 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 22:25:45,492 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 22:30:46,086 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 22:35:46,466 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 22:40:47,222 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 22:45:47,484 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 22:50:47,701 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 22:55:48,084 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 23:00:48,622 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 23:05:48,754 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 23:10:49,299 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 23:15:49,596 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 23:20:49,701 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 23:25:50,058 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 23:30:50,298 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 23:38:10,156 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 23:38:10,198 INFO - Marked 1 SchedulerJob instances as failed
+2023-09-23 23:43:10,617 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 23:48:11,022 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 23:51:31,833 WARNING - DagFileProcessorManager (PID=2118) exited with exit code 1 - re-launching
+2023-09-23 23:51:31,859 INFO - Launched DagFileProcessorManager with pid: 16299
+2023-09-23 23:51:31,877 INFO - Configured default timezone Timezone('UTC')
+2023-09-23 23:51:32,833 ERROR - Exception when executing SchedulerJob._run_scheduler_loop
+Traceback (most recent call last):
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1890, in _execute_context
+    self.dialect.do_executemany(
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 733, in do_executemany
+    cursor.executemany(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: job.id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rooth/.local/lib/python3.10/site-packages/airflow/jobs/scheduler_job_runner.py", line 845, in _execute
+    self._run_scheduler_loop()
+  File "/home/rooth/.local/lib/python3.10/site-packages/airflow/jobs/scheduler_job_runner.py", line 988, in _run_scheduler_loop
+    perform_heartbeat(
+  File "/home/rooth/.local/lib/python3.10/site-packages/airflow/jobs/job.py", line 350, in perform_heartbeat
+    job.heartbeat(heartbeat_callback=heartbeat_callback, session=session)
+  File "/home/rooth/.local/lib/python3.10/site-packages/airflow/utils/session.py", line 74, in wrapper
+    return func(*args, **kwargs)
+  File "/home/rooth/.local/lib/python3.10/site-packages/airflow/jobs/job.py", line 211, in heartbeat
+    session.commit()
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1454, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 832, in commit
+    self._prepare_impl()
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 811, in _prepare_impl
+    self.session.flush()
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 3449, in flush
+    self._flush(objects)
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 3588, in _flush
+    with util.safe_reraise():
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 3549, in _flush
+    flush_context.execute()
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/orm/unitofwork.py", line 456, in execute
+    rec.execute(self)
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/orm/unitofwork.py", line 630, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/orm/persistence.py", line 245, in save_obj
+    _emit_insert_statements(
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/orm/persistence.py", line 1097, in _emit_insert_statements
+    c = connection._execute_20(
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1710, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/sql/elements.py", line 334, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1577, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1953, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2134, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1890, in _execute_context
+    self.dialect.do_executemany(
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 733, in do_executemany
+    cursor.executemany(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: job.id
+[SQL: INSERT INTO job (id, dag_id, state, job_type, start_date, end_date, latest_heartbeat, executor_class, hostname, unixname) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ((1, None, <JobState.RUNNING: 'running'>, 'SchedulerJob', '2023-09-23 16:12:35.520683', None, '2023-09-23 22:51:27.598357', None, 'DESKTOP-LBO766E.localdomain', 'rooth'), (1, None, <JobState.RUNNING: 'running'>, 'SchedulerJob', '2023-09-23 16:12:35.520683', None, '2023-09-23 22:51:27.598357', None, 'DESKTOP-LBO766E.localdomain', 'rooth'))]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+2023-09-23 23:51:33,907 INFO - Sending Signals.SIGTERM to group 16299. PIDs of all processes in the group: [16299]
+2023-09-23 23:51:33,907 INFO - Sending the signal Signals.SIGTERM to group 16299
+2023-09-23 23:51:34,325 INFO - Process psutil.Process(pid=16299, status='terminated', exitcode=0, started='23:51:31') (16299) terminated with exit code 0
+2023-09-23 23:51:34,326 INFO - Exited execute loop
+2023-09-23 23:51:34,339 ERROR - Exception when running scheduler job
+Traceback (most recent call last):
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1890, in _execute_context
+    self.dialect.do_executemany(
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 733, in do_executemany
+    cursor.executemany(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: job.id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rooth/.local/lib/python3.10/site-packages/airflow/cli/commands/scheduler_command.py", line 47, in _run_scheduler_job
+    run_job(job=job_runner.job, execute_callable=job_runner._execute)
+  File "/home/rooth/.local/lib/python3.10/site-packages/airflow/utils/session.py", line 77, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/rooth/.local/lib/python3.10/site-packages/airflow/jobs/job.py", line 289, in run_job
+    return execute_job(job, execute_callable=execute_callable)
+  File "/home/rooth/.local/lib/python3.10/site-packages/airflow/jobs/job.py", line 318, in execute_job
+    ret = execute_callable()
+  File "/home/rooth/.local/lib/python3.10/site-packages/airflow/jobs/scheduler_job_runner.py", line 845, in _execute
+    self._run_scheduler_loop()
+  File "/home/rooth/.local/lib/python3.10/site-packages/airflow/jobs/scheduler_job_runner.py", line 988, in _run_scheduler_loop
+    perform_heartbeat(
+  File "/home/rooth/.local/lib/python3.10/site-packages/airflow/jobs/job.py", line 350, in perform_heartbeat
+    job.heartbeat(heartbeat_callback=heartbeat_callback, session=session)
+  File "/home/rooth/.local/lib/python3.10/site-packages/airflow/utils/session.py", line 74, in wrapper
+    return func(*args, **kwargs)
+  File "/home/rooth/.local/lib/python3.10/site-packages/airflow/jobs/job.py", line 211, in heartbeat
+    session.commit()
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1454, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 832, in commit
+    self._prepare_impl()
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 811, in _prepare_impl
+    self.session.flush()
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 3449, in flush
+    self._flush(objects)
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 3588, in _flush
+    with util.safe_reraise():
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 3549, in _flush
+    flush_context.execute()
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/orm/unitofwork.py", line 456, in execute
+    rec.execute(self)
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/orm/unitofwork.py", line 630, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/orm/persistence.py", line 245, in save_obj
+    _emit_insert_statements(
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/orm/persistence.py", line 1097, in _emit_insert_statements
+    c = connection._execute_20(
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1710, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/sql/elements.py", line 334, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1577, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1953, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2134, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1890, in _execute_context
+    self.dialect.do_executemany(
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 733, in do_executemany
+    cursor.executemany(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: job.id
+[SQL: INSERT INTO job (id, dag_id, state, job_type, start_date, end_date, latest_heartbeat, executor_class, hostname, unixname) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ((1, None, <JobState.RUNNING: 'running'>, 'SchedulerJob', '2023-09-23 16:12:35.520683', None, '2023-09-23 22:51:27.598357', None, 'DESKTOP-LBO766E.localdomain', 'rooth'), (1, None, <JobState.RUNNING: 'running'>, 'SchedulerJob', '2023-09-23 16:12:35.520683', None, '2023-09-23 22:51:27.598357', None, 'DESKTOP-LBO766E.localdomain', 'rooth'))]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+2023-09-23 23:57:00,348 INFO - Starting the scheduler
+2023-09-23 23:57:00,350 INFO - Processing each file at most -1 times
+2023-09-23 23:57:00,367 INFO - Launched DagFileProcessorManager with pid: 16329
+2023-09-23 23:57:00,370 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-23 23:57:00,391 INFO - Configured default timezone Timezone('UTC')
+2023-09-24 00:02:00,512 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-24 00:07:00,555 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-24 00:12:00,612 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-24 00:17:00,630 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-24 00:22:00,696 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-24 00:28:37,760 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-24 00:28:37,770 INFO - Marked 1 SchedulerJob instances as failed
+2023-09-24 00:33:37,863 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-24 00:38:37,912 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-24 00:43:37,963 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-24 00:47:29,114 ERROR - Exception when executing SchedulerJob._run_scheduler_loop
+Traceback (most recent call last):
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1910, in _execute_context
+    self.dialect.do_execute(
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: disk I/O error
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rooth/.local/lib/python3.10/site-packages/airflow/jobs/scheduler_job_runner.py", line 845, in _execute
+    self._run_scheduler_loop()
+  File "/home/rooth/.local/lib/python3.10/site-packages/airflow/jobs/scheduler_job_runner.py", line 979, in _run_scheduler_loop
+    num_queued_tis = self._do_scheduling(session)
+  File "/home/rooth/.local/lib/python3.10/site-packages/airflow/jobs/scheduler_job_runner.py", line 1093, in _do_scheduling
+    num_queued_tis = self._critical_section_enqueue_task_instances(session=session)
+  File "/home/rooth/.local/lib/python3.10/site-packages/airflow/jobs/scheduler_job_runner.py", line 668, in _critical_section_enqueue_task_instances
+    queued_tis = self._executable_task_instances_to_queued(max_tis, session=session)
+  File "/home/rooth/.local/lib/python3.10/site-packages/airflow/jobs/scheduler_job_runner.py", line 321, in _executable_task_instances_to_queued
+    pools = Pool.slots_stats(lock_rows=True, session=session)
+  File "/home/rooth/.local/lib/python3.10/site-packages/airflow/utils/session.py", line 74, in wrapper
+    return func(*args, **kwargs)
+  File "/home/rooth/.local/lib/python3.10/site-packages/airflow/models/pool.py", line 175, in slots_stats
+    pool_rows = session.execute(query)
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1717, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1710, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/sql/elements.py", line 334, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1577, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1953, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2134, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1910, in _execute_context
+    self.dialect.do_execute(
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) disk I/O error
+[SQL: SELECT slot_pool.pool, slot_pool.slots, slot_pool.include_deferred 
+FROM slot_pool]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2023-09-24 00:47:30,150 INFO - Sending Signals.SIGTERM to group 16329. PIDs of all processes in the group: [16329]
+2023-09-24 00:47:30,150 INFO - Sending the signal Signals.SIGTERM to group 16329
+2023-09-24 00:47:30,778 INFO - Process psutil.Process(pid=16329, status='terminated', exitcode=0, started='23:56:59') (16329) terminated with exit code 0
+2023-09-24 00:47:30,780 INFO - Exited execute loop
+2023-09-24 00:47:30,799 ERROR - Exception when running scheduler job
+Traceback (most recent call last):
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1910, in _execute_context
+    self.dialect.do_execute(
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: disk I/O error
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rooth/.local/lib/python3.10/site-packages/airflow/cli/commands/scheduler_command.py", line 47, in _run_scheduler_job
+    run_job(job=job_runner.job, execute_callable=job_runner._execute)
+  File "/home/rooth/.local/lib/python3.10/site-packages/airflow/utils/session.py", line 77, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/rooth/.local/lib/python3.10/site-packages/airflow/jobs/job.py", line 289, in run_job
+    return execute_job(job, execute_callable=execute_callable)
+  File "/home/rooth/.local/lib/python3.10/site-packages/airflow/jobs/job.py", line 318, in execute_job
+    ret = execute_callable()
+  File "/home/rooth/.local/lib/python3.10/site-packages/airflow/jobs/scheduler_job_runner.py", line 845, in _execute
+    self._run_scheduler_loop()
+  File "/home/rooth/.local/lib/python3.10/site-packages/airflow/jobs/scheduler_job_runner.py", line 979, in _run_scheduler_loop
+    num_queued_tis = self._do_scheduling(session)
+  File "/home/rooth/.local/lib/python3.10/site-packages/airflow/jobs/scheduler_job_runner.py", line 1093, in _do_scheduling
+    num_queued_tis = self._critical_section_enqueue_task_instances(session=session)
+  File "/home/rooth/.local/lib/python3.10/site-packages/airflow/jobs/scheduler_job_runner.py", line 668, in _critical_section_enqueue_task_instances
+    queued_tis = self._executable_task_instances_to_queued(max_tis, session=session)
+  File "/home/rooth/.local/lib/python3.10/site-packages/airflow/jobs/scheduler_job_runner.py", line 321, in _executable_task_instances_to_queued
+    pools = Pool.slots_stats(lock_rows=True, session=session)
+  File "/home/rooth/.local/lib/python3.10/site-packages/airflow/utils/session.py", line 74, in wrapper
+    return func(*args, **kwargs)
+  File "/home/rooth/.local/lib/python3.10/site-packages/airflow/models/pool.py", line 175, in slots_stats
+    pool_rows = session.execute(query)
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1717, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1710, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/sql/elements.py", line 334, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1577, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1953, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2134, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1910, in _execute_context
+    self.dialect.do_execute(
+  File "/home/rooth/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) disk I/O error
+[SQL: SELECT slot_pool.pool, slot_pool.slots, slot_pool.include_deferred 
+FROM slot_pool]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2023-09-27 16:31:02,165 INFO - Starting the scheduler
+2023-09-27 16:31:02,168 INFO - Processing each file at most -1 times
+2023-09-27 16:31:02,189 INFO - Launched DagFileProcessorManager with pid: 56
+2023-09-27 16:31:02,192 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-27 16:31:02,211 INFO - Configured default timezone Timezone('UTC')
+2023-09-27 16:36:02,500 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-27 16:41:02,628 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-27 18:31:32,603 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-27 18:31:32,610 INFO - Marked 1 SchedulerJob instances as failed
+2023-09-27 18:36:33,034 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-27 18:41:33,136 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-27 18:46:33,261 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-27 18:51:33,399 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-27 18:56:33,510 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-27 19:01:33,583 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-27 19:06:33,659 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-27 19:55:40,110 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-27 19:55:40,119 INFO - Marked 1 SchedulerJob instances as failed
+2023-09-27 20:00:40,243 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-27 20:05:40,354 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-27 20:10:40,444 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-27 20:15:40,509 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-27 20:20:40,582 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-27 20:47:55,720 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-27 20:47:55,728 INFO - Marked 1 SchedulerJob instances as failed
+2023-09-27 20:52:55,760 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-27 20:57:55,886 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-27 21:02:55,914 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-27 21:07:56,019 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-27 21:12:56,124 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-27 21:17:56,213 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-27 21:22:56,304 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-27 21:27:56,386 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-27 21:32:56,473 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-27 21:37:56,604 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-27 21:42:56,711 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-27 21:47:56,855 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-27 21:52:56,978 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-27 21:57:57,077 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-27 22:02:57,170 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-27 22:07:57,315 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-27 22:12:57,451 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-27 22:17:57,548 INFO - Adopting or resetting orphaned tasks for active dag runs
+2023-09-27 22:22:57,649 INFO - Adopting or resetting orphaned tasks for active dag runs
