@@ -1,6 +1,8 @@
 # Scheduled_ETL_pipeline_Covid19_Data
 
-In this project, I designed and implemented a scheduled data pipeline to automate the extraction, transformation, and loading (ETL) of data from an external API into Google Drive. The primary objectives of the project were to ensure data reliability, cleanliness, and accessibility for further analysis and reporting.
+In this project, I designed and implemented a scheduled data pipeline to automate the extraction, transformation, and loading (ETL) of data from an external API into Google Drive, 
+and I produced various analytical dashboards using Tableau.
+Also i created a Gradient Boosting model to add predictions on top of the analysis. The model will be deployed using Flask and will be available to users via API.
 
 Key Technologies and Tools Used:
 - Apache Airflow: I leveraged Apache Airflow, an open-source orchestration tool, to create a flexible and scalable workflow for managing the data pipeline. Airflow allowed for task scheduling, error handling, and easy monitoring of data transfer processes.
@@ -21,3 +23,8 @@ Project Workflow:
 2. Data Processing and Transformation: After data retrieval, I applied data cleaning and transformation operations using Python. This step included data validation, normalization, and enrichment to prepare the data for downstream consumption.
 
 3. File Upload to Google Drive: I employed the Google Drive API to seamlessly upload the processed data files to designated folders in Google Drive. Each file was given a meaningful name and stored in an organized structure.
+
+4. Tableau Dashboards : I tried to analyse cleaned data using Tableau by creating different dashboards.
+
+5. Gradient Boosting Model and a simple Flask API : I created a Machine Learning model that can predict the daily increase in COVID-related death cases based on the number of people currently hospitalized and I created a simple API using Flask that will allow users to receive the output of this model.
+   
