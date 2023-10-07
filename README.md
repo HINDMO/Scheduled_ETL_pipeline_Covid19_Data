@@ -1,6 +1,6 @@
 # Scheduled_ETL_pipeline_Covid19_Data
 
-In this project, I designed and implemented a robust and scheduled data pipeline to automate the extraction, transformation, and loading (ETL) of data from an external API into Google Drive. The primary objectives of the project were to ensure data reliability, cleanliness, and accessibility for further analysis and reporting.
+In this project, I designed and implemented a scheduled data pipeline to automate the extraction, transformation, and loading (ETL) of data from an external API into Google Drive. The primary objectives of the project were to ensure data reliability, cleanliness, and accessibility for further analysis and reporting.
 
 Key Technologies and Tools Used:
 - Apache Airflow: I leveraged Apache Airflow, an open-source orchestration tool, to create a flexible and scalable workflow for managing the data pipeline. Airflow allowed for task scheduling, error handling, and easy monitoring of data transfer processes.
