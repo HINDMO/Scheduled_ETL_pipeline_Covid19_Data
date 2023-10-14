@@ -27,4 +27,5 @@ Project Workflow:
 4. Tableau Dashboards : I tried to analyse cleaned data using Tableau by creating different dashboards.
 
 5. Gradient Boosting Model and a simple Flask API : I created a Machine Learning model that can predict the daily increase in COVID-related death cases based on the number of people currently hospitalized and I created a simple API using Flask that will allow users to receive the output of this model.
-   
+   <img width="673" alt="image" src="https://github.com/HINDMO/Scheduled_ETL_pipeline_Covid19_Data/assets/96254672/24ffa69d-0f77-4c0b-99de-c1d2779c071b">
+
